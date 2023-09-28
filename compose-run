@@ -1,0 +1,44 @@
+#!/bin/sh
+
+o_bind=false
+o_make_host_directory=false
+o_service="nothing"
+
+echo "======================================================================================================"
+echo "$@"
+
+# Parse options
+while [ $# -gt 0 ]; do
+    case $1 in
+        --bind)
+            shift
+            o_bind="$1"
+            ;;
+        --make-host-directory)
+            shift
+            o_make_host_directory="$1"
+            ;;
+        --service)
+            shift
+            o_service="$1"
+            ;;
+        *)
+            break
+    esac
+
+    shift
+done
+
+(sudo rm -rf volume) && \
+if ${o_make_host_directory}; then mkdir volume; fi && \
+if [ -d volume ]; then (echo && echo Host: && id && ls -ld volume); fi && \
+(docker compose build --quiet \
+    --build-arg "USER_ID=$(id -u)" \
+    --build-arg "USER_NAME=$(id -un)" \
+) && \
+if ${o_bind}; then
+    (docker compose run --rm --quiet-pull --volume "${PWD}:/app" ${o_service}) \
+;else \
+    (docker compose run --rm --quiet-pull ${o_service}) \
+;fi && \
+if [ -d volume ]; then (echo && echo Host: && id && ls -ld volume); fi

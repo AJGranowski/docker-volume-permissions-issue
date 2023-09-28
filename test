@@ -1,0 +1,11 @@
+#!/bin/sh
+
+./compose-run --bind false --make-host-directory false --service nothing
+./compose-run --bind false --make-host-directory false --service mkdir
+./compose-run --bind false --make-host-directory false --service mkdir-chown
+./compose-run --bind true --make-host-directory false --service nothing
+./compose-run --bind true --make-host-directory false --service mkdir
+./compose-run --bind true --make-host-directory false --service mkdir-chown
+./compose-run --bind true --make-host-directory true --service nothing
+./compose-run --bind true --make-host-directory true --service mkdir
+./compose-run --bind true --make-host-directory true --service mkdir-chown

@@ -1,0 +1,41 @@
+services:
+  nothing:
+    build:
+      network: none
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    volumes:
+      - type: "volume"
+        source: volume
+        target: "/app/volume"
+    working_dir: "/app"
+  
+  mkdir:
+    build:
+      args:
+        MKDIR_PATHS: "/app/volume"
+      network: none
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    volumes:
+      - type: "volume"
+        source: volume
+        target: "/app/volume"
+    working_dir: "/app"
+  
+  mkdir-chown:
+    build:
+      args:
+        CHOWN_PATHS: "/app/volume"
+        MKDIR_PATHS: "/app/volume"
+      network: none
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    volumes:
+      - type: "volume"
+        source: volume
+        target: "/app/volume"
+    working_dir: "/app"
+
+volumes:
+  volume:
