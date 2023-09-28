@@ -3,7 +3,7 @@
 
 Container:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl)
-drwxr-xr-x    2 wsl      root          4096 Sep 28 00:40 volume
+drwxr-xr-x    2 root     root          4096 Sep 28 04:43 volume
 ======================================================================================================
 --bind false --make-host-directory false --service mkdir
 
@@ -21,11 +21,11 @@ drwxr-xr-x    2 wsl      root          4096 Sep 28 00:40 volume
 
 Container:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl)
-drwxr-xr-x    2 wsl      root          4096 Sep 28 00:40 volume
+drwxr-xr-x    2 root     root          4096 Sep 28 04:43 volume
 
 Host:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),999(docker)
-drwxrwxrwx 1 wsl wsl 512 Sep 27 18:30 volume
+drwxrwxrwx 1 wsl wsl 512 Sep 27 21:43 volume
 ======================================================================================================
 --bind true --make-host-directory false --service mkdir
 
@@ -35,7 +35,7 @@ drwxr-xr-x    2 root     root          4096 Sep 28 00:40 volume
 
 Host:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),999(docker)
-drwxrwxrwx 1 wsl wsl 512 Sep 27 18:30 volume
+drwxrwxrwx 1 wsl wsl 512 Sep 27 21:43 volume
 ======================================================================================================
 --bind true --make-host-directory false --service mkdir-chown
 
@@ -45,27 +45,27 @@ drwxr-xr-x    2 wsl      root          4096 Sep 28 00:40 volume
 
 Host:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),999(docker)
-drwxrwxrwx 1 wsl wsl 512 Sep 27 18:30 volume
+drwxrwxrwx 1 wsl wsl 512 Sep 27 21:43 volume
 ======================================================================================================
 --bind true --make-host-directory true --service nothing
 
 Host:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),999(docker)
-drwxrwxrwx 1 wsl wsl 512 Sep 27 18:30 volume
+drwxrwxrwx 1 wsl wsl 512 Sep 27 21:43 volume
 
 Container:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl)
-drwxr-xr-x    2 wsl      root          4096 Sep 28 00:40 volume
+drwxr-xr-x    2 root     root          4096 Sep 28 04:43 volume
 
 Host:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),999(docker)
-drwxrwxrwx 1 wsl wsl 512 Sep 27 18:30 volume
+drwxrwxrwx 1 wsl wsl 512 Sep 27 21:43 volume
 ======================================================================================================
 --bind true --make-host-directory true --service mkdir
 
 Host:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),999(docker)
-drwxrwxrwx 1 wsl wsl 512 Sep 27 18:30 volume
+drwxrwxrwx 1 wsl wsl 512 Sep 27 21:43 volume
 
 Container:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl)
@@ -73,13 +73,13 @@ drwxr-xr-x    2 root     root          4096 Sep 28 00:40 volume
 
 Host:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),999(docker)
-drwxrwxrwx 1 wsl wsl 512 Sep 27 18:30 volume
+drwxrwxrwx 1 wsl wsl 512 Sep 27 21:43 volume
 ======================================================================================================
 --bind true --make-host-directory true --service mkdir-chown
 
 Host:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),999(docker)
-drwxrwxrwx 1 wsl wsl 512 Sep 27 18:30 volume
+drwxrwxrwx 1 wsl wsl 512 Sep 27 21:43 volume
 
 Container:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl)
@@ -87,4 +87,4 @@ drwxr-xr-x    2 wsl      root          4096 Sep 28 00:40 volume
 
 Host:
 uid=1000(wsl) gid=1000(wsl) groups=1000(wsl),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),999(docker)
-drwxrwxrwx 1 wsl wsl 512 Sep 27 18:30 volume
+drwxrwxrwx 1 wsl wsl 512 Sep 27 21:43 volume

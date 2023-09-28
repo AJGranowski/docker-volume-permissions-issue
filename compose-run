@@ -30,6 +30,7 @@ while [ $# -gt 0 ]; do
 done
 
 (sudo rm -rf volume) && \
+(docker compose down --volumes) && \
 if ${o_make_host_directory}; then mkdir volume; fi && \
 if [ -d volume ]; then (echo && echo Host: && id && ls -ld volume); fi && \
 (docker compose build --quiet \
