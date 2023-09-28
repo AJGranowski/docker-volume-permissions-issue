@@ -5,7 +5,7 @@ ARG USER_NAME
 ARG MKDIR_PATHS
 ARG CHOWN_PATHS
 
-# Create $USER_NAME
+# Create $USER_NAME, create $MKDIR_PATHS, and grant ownership of $CHOWN_PATHS to $USER_NAME
 RUN if [ -n "${USER_NAME}" ] && [ "${USER_NAME}" != "root" ] && if [ -n "${USER_ID}" ]; then [ ${USER_ID} -ne 0 ]; fi; then \
         if getent passwd "${USER_NAME}"; then \
             deluser "${USER_NAME}" \
