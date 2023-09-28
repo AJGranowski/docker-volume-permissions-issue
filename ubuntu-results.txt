@@ -1,0 +1,90 @@
+======================================================================================================
+--bind false --make-host-directory false --service nothing
+
+Container:
+uid=1000(user) gid=1000(user) groups=1000(user)
+drwxr-xr-x    2 user     root          4096 Sep 28 01:29 volume
+======================================================================================================
+--bind false --make-host-directory false --service mkdir
+
+Container:
+uid=1000(user) gid=1000(user) groups=1000(user)
+drwxr-xr-x    2 root     root          4096 Sep 28 01:29 volume
+======================================================================================================
+--bind false --make-host-directory false --service mkdir-chown
+
+Container:
+uid=1000(user) gid=1000(user) groups=1000(user)
+drwxr-xr-x    2 user     root          4096 Sep 28 01:29 volume
+======================================================================================================
+--bind true --make-host-directory false --service nothing
+
+Container:
+uid=1000(user) gid=1000(user) groups=1000(user)
+drwxr-xr-x    2 user     root          4096 Sep 28 01:29 volume
+
+Host:
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo),997(docker),999(vboxsf)
+drwxr-xr-x 2 root root 4096 Sep 27 18:29 volume
+======================================================================================================
+--bind true --make-host-directory false --service mkdir
+
+Container:
+uid=1000(user) gid=1000(user) groups=1000(user)
+drwxr-xr-x    2 root     root          4096 Sep 28 01:29 volume
+
+Host:
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo),997(docker),999(vboxsf)
+drwxr-xr-x 2 root root 4096 Sep 27 18:29 volume
+======================================================================================================
+--bind true --make-host-directory false --service mkdir-chown
+
+Container:
+uid=1000(user) gid=1000(user) groups=1000(user)
+drwxr-xr-x    2 user     root          4096 Sep 28 01:29 volume
+
+Host:
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo),997(docker),999(vboxsf)
+drwxr-xr-x 2 root root 4096 Sep 27 18:29 volume
+======================================================================================================
+--bind true --make-host-directory true --service nothing
+
+Host:
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo),997(docker),999(vboxsf)
+drwxrwxr-x 2 user user 4096 Sep 27 18:29 volume
+
+Container:
+uid=1000(user) gid=1000(user) groups=1000(user)
+drwxr-xr-x    2 user     root          4096 Sep 28 01:29 volume
+
+Host:
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo),997(docker),999(vboxsf)
+drwxrwxr-x 2 user user 4096 Sep 27 18:29 volume
+======================================================================================================
+--bind true --make-host-directory true --service mkdir
+
+Host:
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo),997(docker),999(vboxsf)
+drwxrwxr-x 2 user user 4096 Sep 27 18:29 volume
+
+Container:
+uid=1000(user) gid=1000(user) groups=1000(user)
+drwxr-xr-x    2 root     root          4096 Sep 28 01:29 volume
+
+Host:
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo),997(docker),999(vboxsf)
+drwxrwxr-x 2 user user 4096 Sep 27 18:29 volume
+======================================================================================================
+--bind true --make-host-directory true --service mkdir-chown
+
+Host:
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo),997(docker),999(vboxsf)
+drwxrwxr-x 2 user user 4096 Sep 27 18:29 volume
+
+Container:
+uid=1000(user) gid=1000(user) groups=1000(user)
+drwxr-xr-x    2 user     root          4096 Sep 28 01:29 volume
+
+Host:
+uid=1000(user) gid=1000(user) groups=1000(user),27(sudo),997(docker),999(vboxsf)
+drwxrwxr-x 2 user user 4096 Sep 27 18:29 volume
